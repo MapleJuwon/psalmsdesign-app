@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PsalmsDesign | Mitarbeiter-App</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <i data-lucide="diamond"></i>
+        <span>PsalmsDesign</span>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <a href="#/" class="nav-item active" data-page="dashboard">
+          <i data-lucide="layout-dashboard"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="#/auftraege" class="nav-item" data-page="orders">
+          <i data-lucide="clipboard-list"></i>
+          <span>Aufträge</span>
+        </a>
+        <a href="#/upload" class="nav-item" data-page="upload">
+          <i data-lucide="upload-cloud"></i>
+          <span>Design Upload</span>
+        </a>
+        <a href="#/korrekturen" class="nav-item" data-page="corrections">
+          <i data-lucide="edit-3"></i>
+          <span>Korrekturen</span>
+        </a>
+        <a href="#/kva" class="nav-item" data-page="quotes">
+          <i data-lucide="calculator"></i>
+          <span>KVA & Angebote</span>
+        </a>
+        <a href="#/portfolio" class="nav-item" data-page="portfolio">
+          <i data-lucide="image"></i>
+          <span>Portfolio</span>
+        </a>
+        <a href="#/kunden" class="nav-item" data-page="clients">
+          <i data-lucide="users"></i>
+          <span>Kunden</span>
+        </a>
+      </nav>
+      
+      <div class="sidebar-footer">
+        <a href="#/settings" class="nav-item">
+          <i data-lucide="settings"></i>
+          <span>Einstellungen</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="header">
+        <div class="header-title">
+          <h1 id="page-title">Dashboard</h1>
+        </div>
+        
+        <div class="header-actions">
+          <div class="search-bar">
+            <!-- Search input could go here -->
+          </div>
+          
+          <div class="user-profile">
+            <span class="user-name">Max Designer</span>
+            <div class="avatar">MD</div>
+          </div>
+        </div>
+      </header>
+      
+      <div id="page-view" class="page-content">
+        <!-- Dynamic content injected here -->
+      </div>
+    </main>
+  </div>
+
+  <!-- App Scripts -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
